@@ -6,17 +6,17 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="robots" content="noindex, nofollow">
-<title>MineWorder - Word Search Puzzle Game 2 player| Soosooland</title>
+<title>MineWorder large - Word Search Puzzle Game 2 player| Soosooland</title>
 <script>
   if (window.top !== window.self) {
     window.top.location = "https://soosooland.com";
   }
-  if (window.innerWidth < 560) {
-    window.location.href = 'https://soosooland.com/minewordermini/';
+  if (window.innerWidth < 650) {
+    window.location.href = 'https://soosooland.com/mineworder/';
   }
   console.log("© 2025-2026 Soosooland by 한수수. All rights reserved.");
   console.log("https://soosooland.com");
-  console.log("🎮 MineWorder | Born: 2026-09-04");
+  console.log("🎮 MineWorder large | Born: 2026-09-07");
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
@@ -55,7 +55,7 @@ body {
     gap: 20px;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     justify-content: center;
   }
   .cell {
@@ -91,7 +91,7 @@ body {
     background: #209087;
     color: #fff;
     width: 180px;
-    height: 480px;
+    height: 562px;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 12px;
@@ -107,14 +107,14 @@ body {
   #currentTurn.turn-pink { color: #f7cdf7; }
   #game {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(14, 1fr);
     grid-gap: 4px;
     padding: 10px;
     background-color: #0E756D;
     border-radius: 12px;
-    width: 480px;
-    height: 480px;
+    width: 562px;
+    height: 562px;
     box-sizing: border-box;
     flex-shrink: 0;
   }
@@ -134,13 +134,13 @@ footer { text-align: center; color: #c3dbdb; font-size: 0.8rem; margin-top: 30px
     h1 { font-size: 2.5em; margin: 15px 0 5px; }
     p { font-size: 0.9em; margin: 0 10px 15px; }
     .container { flex-direction: column; align-items: center; width: 100%; gap: 0; }
-    #game { width:480px; height: auto; aspect-ratio: 1 / 1; grid-gap: 3px; }
+    #game { width:562px; height: auto; aspect-ratio: 1 / 1; grid-gap: 3px; }
     #greenScore, #pinkScore { display: none !important; }
     .score-container {
       display: flex !important;
       flex-direction: column;
       gap: 10px;
-      width:480px;
+      width:562px;
       margin-top: 15px;
     }
     .score-container > div {
@@ -193,7 +193,7 @@ footer { text-align: center; color: #c3dbdb; font-size: 0.8rem; margin-top: 30px
 </footer>
 
 <script>
-const gridSize = 12;
+const gridSize = 14;
 const totalCells = gridSize * gridSize;
 
 let board, revealed, wordMap, foundWords, currentPlayer, foundBy, words, usedIndexes;
