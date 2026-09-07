@@ -6,17 +6,17 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="robots" content="noindex, nofollow">
-<title>마인워더 - 워드 서치 퍼즐 2인 대결| Soosooland</title>
+<title>마인워더 라지 - 워드 서치 퍼즐 2인 대결| Soosooland</title>
 <script>
   if (window.top !== window.self) {
     window.top.location = "https://soosooland.com";
   }
-  if (window.innerWidth < 580) {
-    window.location.href = 'https://soosooland.com/minewordermini/';
+  if (window.innerWidth < 650) {
+    window.location.href = 'https://soosooland.com/mineworder/';
   }
   console.log("© 2025-2026 Soosooland by 한수수. All rights reserved.");
   console.log("https://soosooland.com");
-  console.log("🎮 MineWarder | Born: 2026-09-04");
+  console.log("🎮 MineWorder large | Born: 2026-09-07");
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
@@ -91,7 +91,7 @@ body {
     background: #209087;
     color: #fff;
     width: 180px;
-    height: 456px;
+    height: 544px;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 12px;
@@ -107,14 +107,14 @@ body {
   #currentTurn.turn-pink { color: #f7cdf7; }
   #game {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-gap: 4px;
     padding: 10px;
     background-color: #0E756D;
     border-radius: 12px;
-    width: 456px;
-    height: 456px;
+    width: 544px;
+    height: 544px;
     box-sizing: border-box;
     flex-shrink: 0;
   }
@@ -130,17 +130,17 @@ body {
   }
   button:hover { background-color: #1baf8f; color: #fff; }
 footer { text-align: center; color: #c3dbdb; font-size: 0.8rem; margin-top: 30px; }
-  @media (max-width: 910px) {
+  @media (max-width: 950px) {
     h1 { font-size: 2.5em; margin: 15px 0 5px; }
     p { font-size: 0.9em; margin: 0 10px 15px; }
     .container { flex-direction: column; align-items: center; width: 100%; gap: 0; }
-    #game { width:456px; height: auto; aspect-ratio: 1 / 1; grid-gap: 3px; }
+    #game { width:544px; height: auto; aspect-ratio: 1 / 1; grid-gap: 3px; }
     #greenScore, #pinkScore { display: none !important; }
     .score-container {
       display: flex !important;
       flex-direction: column;
       gap: 10px;
-      width:456px;
+      width:544px;
       margin-top: 15px;
     }
     .score-container > div {
@@ -153,7 +153,7 @@ footer { text-align: center; color: #c3dbdb; font-size: 0.8rem; margin-top: 30px
     }
     .score-container h2 { font-size: 1em; margin: 0 0 8px; }
     .score-container p { font-size: 0.95em; display: inline-block; margin: 3px 6px; color: #fff; text-align: left; }
-    .btn-container { margin: 15px 0; width: 95%; max-width: 456px; justify-content: center; }
+    .btn-container { margin: 15px 0; width: 95%; max-width: 544px; justify-content: center; }
     button { font-size: 1em; padding: 12px 25px; flex: 1; max-width: 150px; }
   }
   @media (max-width: 480px) {
@@ -189,11 +189,11 @@ footer { text-align: center; color: #c3dbdb; font-size: 0.8rem; margin-top: 30px
 </div>
 </div>
 <footer>
-  <p>© 2025-2026 Han Soosoo. All rights reserved.</p>
+  <p>© 2026 Han Soosoo. All rights reserved.</p>
 </footer>
 
 <script>
-const gridSize = 10;
+const gridSize = 12;
 const totalCells = gridSize * gridSize;
 
 let board, revealed, wordMap, foundWords, currentPlayer, foundBy, words, usedIndexes;
