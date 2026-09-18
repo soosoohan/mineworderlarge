@@ -8,16 +8,24 @@
 <meta name="robots" content="noindex, nofollow">
 <title>마인워더 라지 - 워드 서치 퍼즐 2인 대결| Soosooland</title>
 <script>
-  if (window.top !== window.self) {
-    window.top.location = "https://soosooland.com";
-  }
-  if (window.innerWidth < 650) {
-    window.location.href = 'https://soosooland.com/mineworder/';
-  }
+  (function () {
+    // iframe 안이면 탈출
+    if (window.top !== window.self) {
+      window.top.location.replace("https://soosooland.com");
+      return;
+    }
+    var w = window.innerWidth;
+    if (w < 560) {
+      location.replace("https://soosooland.com/minewordermini/");
+    } else if (w < 650) {
+      location.replace("https://soosooland.com/mineworder/");
+    }
+  })();
   console.log("© 2025-2026 Soosooland by 한수수. All rights reserved.");
   console.log("https://soosooland.com");
   console.log("🎮 MineWorder large | Born: 2026-09-07");
 </script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
 <script>
